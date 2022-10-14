@@ -3,8 +3,7 @@ name: tracker
 on:
   workflow_dispatch:
   schedule:
-    - cron: '10 * * * *'
-
+    - cron: '*/10 * * * *'
 jobs:
   update: # make sure the action works on a clean machine without building
     runs-on: ubuntu-latest
